@@ -44,10 +44,10 @@ bindsym --to-code $mod+r mode "resize"
 
 mode "resize" {
 	
-	bindsym --to-code $mod+k resize grow height 30 px
-	bindsym --to-code $mod+j resize shrink height 30 px
-	bindsym --to-code $mod+h resize shrink width 30 px
-	bindsym --to-code $mod+l resize grow width 30 px
+  bindsym --to-code $mod+k resize grow height 30 px
+  bindsym --to-code $mod+j resize shrink height 30 px
+  bindsym --to-code $mod+h resize shrink width 30 px
+  bindsym --to-code $mod+l resize grow width 30 px
   bindsym --to-code $mod+down gaps inner all minus 2
   bindsym --to-code $mod+up gaps inner all plus 2
   bindsym --to-code $mod+right gaps outer all plus 2
@@ -127,26 +127,18 @@ bar {
 	status_edge_padding 0
 }
 
-output eDP-1 {
-                background ~/Pictures/wp/wallhaven-rqq3gm.png fill
-                resolution 1920x1080
-           }
+output DP-1 { 
+
+}
+
 
 #kb layout
 input type:keyboard {
     xkb_layout us,ru
-    xkb_options grp:alt_shift_toggle
-	repeat_delay 250
-    repeat_rate 40
+    xkb_options grp:ctrl_alt_toggle
+	repeat_delay 180
+    repeat_rate 25
 }
-
-input "1739:52861:SYNA32B9:00_06CB:CE7D_Touchpad" {
-	natural_scroll enabled
-	
-}
-bindsym $mod+BackSpace+Shift input "1:1:AT_Translated_Set_2_keyboard" events toggle
-
-
 
 #STYLING
 font pango:Terminus 10
