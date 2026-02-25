@@ -1,0 +1,63 @@
+* {
+  box-shadow: none;
+  border-radius: 0;
+  transition: none;
+  font-family: "Terminus";
+}
+
+/* === WINDOW === */
+window {
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  margin: 0;
+  padding: 0;
+}
+
+/* === CONTAINERS === */
+#outer-box {
+  background-color: rgba(0, 0, 0, 1);
+  margin: 0;
+  padding: 6px;
+}
+
+#inner-box {
+  background-color: rgba(0, 0, 0, 1);
+  margin-top: 8px; /* ОТСТУП МЕЖДУ INPUT И СПИСКОМ */
+  padding: 0;
+}
+
+/* === INPUT === */
+#input {
+  background-color: rgba(55, 59, 65, 1);
+  color: #f8f8f2;
+  padding: 6px 6px;  
+  border: none;
+  min-height: 0;
+}
+/* отступ между лупой и текстом */
+#input image {
+  margin-right: 6px;
+}
+
+/* === ENTRY === */
+#entry {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 6px;
+  border: none;
+}
+
+/* выбранный элемент */
+#entry:selected {
+  background-color: rgba(55, 59, 65, 1);
+}
+
+/* === TEXT === */
+#text {
+  color: #c5c8c6;
+  margin-left: 6px;
+}
+
+/* === ICONS === */
+#entry image {
+  margin-right: 6px;
+}

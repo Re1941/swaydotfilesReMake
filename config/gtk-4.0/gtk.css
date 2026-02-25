@@ -1,0 +1,78 @@
+* {
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+    transition: none;
+    animation: none;
+    outline: none;
+}
+
+/* === BASE === */
+
+window,
+.background {
+    background-color: #333;
+    color: #d0d0d0;
+}
+
+/* === BUTTONS === */
+
+button {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    padding: 4px 6px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button:active {
+    background-color: #111;
+}
+
+button:checked {
+    background-color: #444;
+}
+
+/* === ENTRY === */
+
+entry,
+textview {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    padding: 4px;
+}
+
+/* === HEADER BAR === */
+
+headerbar {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    box-shadow: none;
+}
+
+/* === POPOVERS / MENUS === */
+
+popover,
+menu {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    box-shadow: none;
+}
+
+/* === SCROLLBAR === */
+
+scrollbar slider {
+    background-color: #444;
+    border: none;
+}
+
+/* === SELECTION === */
+
+*:selected {
+    background-color: #444;
+    color: #fff;
+}
+
+
