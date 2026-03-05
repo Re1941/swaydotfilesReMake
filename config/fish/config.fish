@@ -9,14 +9,11 @@ if status is-interactive # Commands to run in interactive sessions can go here
 
     set fish_greeting
 
-
-
     alias ls 'eza --icons' 
     alias ff fastfetch
     alias b btop
     alias cc 'doas pacman -Scc --noconfirm && yay -Scc --noconfirm'
-    alias up 'doas pacman -Syu --noconfirm && yay -Sua --noconfirm && cc'
-    alias grep rg
+    alias up 'doas pacman -Syu --noconfirm && yay -Sua --noconfirm'
     alias n nvim
     fastfetch
 end
