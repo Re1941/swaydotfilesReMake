@@ -27,37 +27,14 @@ floating_modifier $mod
 bindsym $mod+space floating toggle
 bindsym --to-code $mod+f fullscreen toggle
 
-bindsym --to-code $mod+k focus up
-bindsym --to-code $mod+j focus down
-bindsym --to-code $mod+h focus left
-bindsym --to-code $mod+l focus right
 bindsym --to-code $mod+up focus up
 bindsym --to-code $mod+down focus down
 bindsym --to-code $mod+left focus left
 bindsym --to-code $mod+right focus right
-bindsym --to-code $mod+Shift+k move up 30 px 
-bindsym --to-code $mod+Shift+j move down 30 px 
-bindsym --to-code $mod+Shift+h move left 30 px 
-bindsym --to-code $mod+Shift+l move right 30 px 
 bindsym --to-code $mod+Shift+up move up 30 px 
 bindsym --to-code $mod+Shift+down move down 30 px 
 bindsym --to-code $mod+Shift+left move left 30 px 
 bindsym --to-code $mod+Shift+right move right 30 px 
-bindsym --to-code $mod+r mode "resize"
-
-mode "resize" {
-	
-  bindsym --to-code $mod+k resize grow height 30 px
-  bindsym --to-code $mod+j resize shrink height 30 px
-  bindsym --to-code $mod+h resize shrink width 30 px
-  bindsym --to-code $mod+l resize grow width 30 px
-  bindsym --to-code $mod+down gaps inner all minus 2
-  bindsym --to-code $mod+up gaps inner all plus 2
-  bindsym --to-code $mod+right gaps outer all plus 2
-  bindsym --to-code $mod+left gaps outer all minus 2
-  bindsym --to-code $mod+r mode "default"
-
-}
 
 focus_follows_mouse yes
 focus_on_window_activation smart
