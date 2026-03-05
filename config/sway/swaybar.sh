@@ -4,10 +4,8 @@ echo '{"version": 1,"click_events": true}'
 echo '['
 echo '[]'
 
-#for cpu ticks or sorta shit
 prev_idle=0
 prev_total=0
-
 
 print_n_calc_bar() {
 	date_formatted=$(date "+%a %F %I:%M %p")
@@ -39,36 +37,17 @@ print_n_calc_bar() {
 		{"name":"clock","full_text":"'$date_formatted'","separator":"false","align":"right"},
 		
     ]'
-#for cpu again
 	prev_idle=$curr_idle
 	prev_total=$curr_total
     
 }
-
 
 (while true; do
     print_n_calc_bar
     sleep 1
 done) &
 
-
 while read -r line; do
 	[[ "$line" =~ \"x\":\ ([0-9]+),\ \"y\":\ ([0-9]+) ]] || continue
 	    
-	    X="${BASH_REMATCH[1]}"
-	    Y="${BASH_REMATCH[2]}"
-		
-	    if (( X >= 1910 && Y <= 10 )); then
-			if [[ "$line" == *'"button": 4'* ]]; then
-		    	exec ~/.config/sway/vol_limit.sh up &
-		      
-			elif [[ "$line" == *"\"button\": 5"* ]]; then
-		    	exec ~/.config/sway/vol_limit.sh down &
-
-			elif [[ "$line" == *'button": 1'* ]]; then
-		    	notify-send 'Menu' 'Test'
-		fi
-    fi
 done
-
-
