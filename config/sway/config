@@ -8,7 +8,7 @@ exec --no-startup-id ~/.config/sway/borders.sh &
 exec --no-startup-id dunst &
 exec --no-startup-id wob &
 exec --no-startup-id mkfifo /tmp/wobpipe && tail -f /tmp/wobpipe | wob
-exec --no-startup-id swww-daemon &
+exec --no-startup-id awww-daemon &
 exec --no-startup-id wl-paste --type text --watch cliphist -max-items 1 store &
 exec --no-startup-id wl-paste --type image --watch cliphist -max-items 1 store &
 
