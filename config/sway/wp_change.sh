@@ -1,5 +1,11 @@
 #!/bin/bash
 
-find ~/Pictures/wp -type f | fzf --preview "chafa --size=\$(tput cols)x\$(tput lines) --clear {}" \
---preview-window=up:70%:wrap | tee >(xargs awww img -t none) | xargs matugen -m "dark" -r lanczos3 -tscheme-content image 
- 
+WP_DIR="$HOME/Pictures/wp"
+
+selected_wp=$(find "$WP_DIR" -type f | fzf \
+    --preview 'chafa --size=$(tput cols)x$(tput lines) --clear {}' \
+    --preview-window=up:70%:wrap)
+
+awww img -t none "$selected_wp"
+
+matugen -m "dark" -r lanczos3 -t scheme-content image "$selected_wp"
