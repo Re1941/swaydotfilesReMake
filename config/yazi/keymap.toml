@@ -1,0 +1,4 @@
+[mgr]
+prepend_keymap = [
+    { on = "l", run = 'shell "if [ -d \"$1\" ]; then ya emit enter; else nvim \"$1\"; fi" --block', desc = "Enter or Nvim" },
+]
