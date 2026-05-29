@@ -192,7 +192,7 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
 
-user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0");
+user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/151.0");
 user_pref("layout.frame_rate", 180);
 user_pref("media.peerconnection.enabled", false);
 user_pref("gfx.webrender.all", true);
