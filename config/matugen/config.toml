@@ -11,15 +11,12 @@ post_hook = 'swaymsg reload'
 [templates.btop]
 input_path = 'templates/btop-template'
 output_path = '~/.config/btop/themes/matugen.theme'
-[templates.dunst]
-input_path = 'templates/dunst-template'
-output_path = '~/.config/dunst/dunstrc'
-post_hook = 'dunstctl reload'
 [templates.fish]
 input_path = 'templates/fish-template'
 output_path = '~/.config/fish/colors.fish'
 [templates.fastfetch]
 input_path = 'templates/fastfetch-template'
 output_path = '~/.config/fastfetch/config.jsonc'
-
-
+[templates.yazi]
+input_path = '~/.config/matugen/templates/yazi-template'
+output_path = '~/.config/yazi/theme.toml'
