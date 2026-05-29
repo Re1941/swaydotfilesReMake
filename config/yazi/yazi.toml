@@ -1,0 +1,23 @@
+[opener]
+edit_foot = [
+    { run = 'foot nvim "$@"', orphan = true, desc = "Foot Nvim" }
+]
+
+[enter]
+prepend_rules = [
+    { url = "*.asc", use = "edit_foot" },
+    { url = "*.pub", use = "edit_foot" },
+    { url = "*.rs", use = "edit_foot" },
+    { url = "*.c", use = "edit_foot" },
+    { url = "*.toml", use = "edit_foot" },
+    { url = "*.lua", use = "edit_foot" },
+    { url = "*.sh", use = "edit_foot" },
+    { url = "*.md", use = "edit_foot" },
+    { mime = "text/*", use = "edit_foot" },
+    { mime = "application/x-zerosize", use = "edit_foot" }, 
+    { mime = "application/pgp*", use = "edit_foot" },   
+]
+
+
+[theme]
+use = "~/.config/yazi/theme.toml"
