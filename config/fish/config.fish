@@ -10,6 +10,7 @@ if status is-interactive # Commands to run in interactive sessions can go here
     set fish_greeting
 
     alias ls 'eza --icons' 
+    alias sudo doas
     alias ff fastfetch
     alias b btop
     alias cc 'doas pacman -Scc --noconfirm && yay -Scc --noconfirm'
