@@ -2,8 +2,9 @@
 x-scheme-handler/discord=vesktop.desktop
 image/jpeg=imv.desktop
 image/png=imv.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
 
 [Added Associations]
 image/jpeg=imv.desktop;
-image/png=imv.desktop;
+image/png=librewolf.desktop;imv.desktop;
 audio/x-opus+ogg=librewolf.desktop;
