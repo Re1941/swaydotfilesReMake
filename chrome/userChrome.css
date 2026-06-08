@@ -1,0 +1,113 @@
+#TabsToolbar {
+  display: flex !important;
+  background: var(--bg) !important;
+  border: none !important;
+}
+
+#titlebar {
+  background: var(--bg) !important;
+}
+
+#tabbrowser-tabs,
+.tabbrowser-tab,
+.tabbrowser-tab .tab-stack,
+.tabbrowser-tab .tab-content {
+  background: var(--bg) !important;
+}
+
+.tabbrowser-tab {
+  color: var(--fg) !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+  background: var(--bg-active) !important;
+}
+
+.tabbrowser-tab .tab-close-button {
+  display: none !important;
+}
+
+.tabbrowser-tab .tab-content {
+  padding-inline-end: 8px !important;
+}
+
+#sidebar-box #sidebar-header {
+  display: none !important;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+:root {
+  --bg: #14161b;
+  --bg-light: #14161b;
+  --bg-active: #14161b;
+  --fg: #aeb6c2;
+  --border: #aeb6c2;
+  --toolbar-field-focus-background-color: var(--bg-active) !important;
+  --urlbar-box-shadow: none !important;
+}
+
+#nav-bar {
+  background: var(--bg) !important;
+  border: none !important;
+}
+
+#PersonalToolbar {
+  background: var(--bg) !important;
+  border: none !important;
+}
+
+#urlbar-background {
+  background: var(--bg-light) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+}
+
+#urlbar-background:focus-within {
+  background: var(--bg-active) !important;
+  box-shadow: none !important;
+}
+
+#urlbar-results, .urlbarView-body-inner {
+  background-color: transparent !important;
+}
+
+.urlbarView {
+  margin-inline: 0 !important;
+  width: 100% !important;
+  background-color: var(--bg) !important;
+  border: 1px solid var(--border) !important;
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+#urlbar-searchmode-switcher {
+  background: var(--bg-light) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.urlbarView-row[selected] {
+  background: var(--bg-active) !important;
+  color: var(--fg) !important;
+}
+
+toolbarbutton {
+  border-radius: 0 !important;
+}
+
+toolbarbutton:hover {
+  background: var(--bg-light) !important;
+}
+
+menupopup,
+panel {
+  --panel-background: var(--bg) !important;
+  --panel-color: var(--fg) !important;
+  --panel-border-color: var(--border) !important;
+  color: var(--border) !important;
+  background: var(--bg) !important;
+  border-radius: 0 !important;
+}
