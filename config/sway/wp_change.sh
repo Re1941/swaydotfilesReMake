@@ -2,7 +2,7 @@
 
 WP_DIR="$HOME/Pictures/wp"
 
-selected_wp=$(find "$WP_DIR" -type f | fzf \
+selected_wp=$(find "$WP_DIR" -type f | fzf --bind='j:down,k:up' \
     --preview 'chafa --size=$(tput cols)x$(tput lines) --clear {}' \
     --preview-window=up:70%:wrap)
 
